@@ -1,0 +1,43 @@
+/* bug.css, PTFS Europe, Jake Deery, 2023 */
+
+/* overrides for bz elems */
+.bz_short_desc_container {
+	display: flex!important;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	font-size: 1em;
+	border-radius: 0;
+}
+
+.bz_short_desc_container .knob-buttons {
+	float: none;
+	margin-left: auto;
+	order: 2;
+}
+
+.bz_comment_table {
+	width: 100%;
+	border-top: 1px dotted #333;
+}
+
+.bz_comment {
+	background: #fff;
+}
+
+.bz_comment_text {
+	margin: 0;
+	padding: .5em .5em .5em 1em;
+}
+
+.bz_add_comment {
+	margin-top: 1rem;
+}
+
+/* overrides for desktop */
+@media only screen and (min-width: 992px) {
+	.bz_bug .bz_short_desc_container {
+		flex-wrap: wrap;
+	}
+}
+

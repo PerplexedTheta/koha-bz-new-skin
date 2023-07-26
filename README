@@ -1,0 +1,4 @@
+To install, extract under: <bugzilla5-root>/skins/contrib/KohaV2
+To use, go to the user preferences, and change the chosen skin
+Alternatively, go to the site administration, and set it as the site-default skin
+Built for Bugzilla 5.0.6, with minimal custom templates
