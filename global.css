@@ -84,7 +84,7 @@ hr {
 	display: flex!important;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: center;
+	justify-content: start;
 	background: #352c2e;
 	color: #fff;
 }
@@ -108,13 +108,13 @@ hr {
 
 #titles {
 	margin: .66rem 0;
-	display: inline-flex !important;
+	display: flex !important;
 	flex: 0 1 auto;
 	flex-wrap: nowrap;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	width: auto;
+	width: 100%;
 	border: none;
 	background: transparent;
 	color: #fff;
@@ -414,6 +414,8 @@ a[href='index.cgi?logout=1']::after {
 	}
 
 	#titles {
+		display: inline-flex!important;
+		width: auto;
 		margin-right: 2.5rem;
 	}
 
