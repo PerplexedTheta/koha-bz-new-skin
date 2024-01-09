@@ -1,6 +1,12 @@
 /* bug.css, PTFS Europe, Jake Deery, 2023 */
 
 /* overrides for bz elems */
+#changeform {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 .bz_short_desc_container {
 	display: flex!important;
 	flex-wrap: nowrap;
@@ -16,8 +22,26 @@
 	order: 2;
 }
 
+table.edit_form {
+	width: 100%;
+	max-width: 1450px;
+	margin: 0;
+	padding: 0 1rem;
+}
+
+#bz_big_form_parts {
+	width: 100%;
+	max-width: 1450px;
+	margin: 0;
+	padding: 0 1rem;
+}
+
+
 .bz_comment_table {
 	width: 100%;
+	max-width: 1450px;
+	margin: 0;
+	padding: 0 1rem;
 	border-top: 1px dotted #333;
 }
 
@@ -26,6 +50,7 @@
 }
 
 .bz_comment_text {
+	width: 35em;
 	margin: 0;
 	padding: .5em .5em .5em 1em;
 }
@@ -34,10 +59,20 @@
 	margin-top: 1rem;
 }
 
-/* overrides for desktop */
-@media only screen and (min-width: 992px) {
+.calendar_button, .calendar_button:hover,
+.calendar_button:focus, .calendar_button:active {
+	background: transparent url(../../standard/global/calendar.png) no-repeat;
+	border: 0;
+}
+
+
+/* overrides for tablets & desktops */
+@media only screen and (min-width: 768px) {
 	.bz_bug .bz_short_desc_container {
 		flex-wrap: wrap;
 	}
 }
 
+
+/* overrides for desktops only */
+@media only screen and (min-width: 992px) { }
