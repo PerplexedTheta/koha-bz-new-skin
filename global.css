@@ -18,16 +18,23 @@ body {
 	font-size: 14px;
 }
 
-a, a:visited {
+a, a:link {
 	color: #039;
 	text-decoration: none;
 }
 
+a:visited {
+	color: #850099;
+	text-decoration: none;
+}
+
 a:hover {
+	color: #333;
 	text-decoration: 2px underline;
 }
 
 a:focus, a:active {
+	color: #333;
 	text-decoration: none;
 	outline: 2px solid #039;
 }
@@ -114,7 +121,11 @@ hr {
 	color: #fff;
 }
 
-#header a, #header a:link,
+#header a, #header a:link {
+	color: #fff;
+	text-decoration: none;
+}
+
 #header a:visited {
 	color: #fff;
 	text-decoration: none;
@@ -417,6 +428,14 @@ a[href='index.cgi?logout=1']::after {
 	flex-wrap: wrap;
 }
 
+table.file_table, tbody.file {
+	background: #fff;
+}
+
+#viewFrame {
+	background: #fff;
+}
+
 #footer {
 	width: auto;
 	margin: 0 1rem 1rem 1rem;
@@ -505,7 +524,10 @@ a[href='index.cgi?logout=1']::after {
 		flex-wrap: nowrap;
 	}
 
-	#header a, #header a:link,
+	#header a, #header a:link {
+		color: #ccc;
+	}
+
 	#header a:visited {
 		color: #ccc;
 	}
