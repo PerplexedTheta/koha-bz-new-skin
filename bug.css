@@ -8,10 +8,6 @@
 }
 
 .bz_short_desc_container {
-	display: flex!important;
-	flex-wrap: nowrap;
-	align-items: center;
-	justify-content: center;
 	font-size: 1em;
 	border-radius: 0;
 }
@@ -67,11 +63,7 @@ table.edit_form {
 
 
 /* overrides for tablets & desktops */
-@media only screen and (min-width: 768px) {
-	.bz_bug .bz_short_desc_container {
-		flex-wrap: wrap;
-	}
-}
+@media only screen and (min-width: 768px) { }
 
 
 /* overrides for desktops only */
