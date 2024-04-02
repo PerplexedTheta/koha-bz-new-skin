@@ -436,6 +436,10 @@ table.file_table, tbody.file {
 	background: #fff;
 }
 
+div.center img {
+	background: #fff;
+}
+
 #footer {
 	width: auto;
 	margin: 0 1rem 1rem 1rem;

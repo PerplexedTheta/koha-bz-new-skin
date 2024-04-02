@@ -9,13 +9,8 @@
 
 .bz_short_desc_container {
 	font-size: 1em;
+	line-height: 2.5625rem;
 	border-radius: 0;
-}
-
-.bz_short_desc_container .knob-buttons {
-	float: none;
-	margin-left: auto;
-	order: 2;
 }
 
 table.edit_form {
@@ -61,6 +56,9 @@ table.edit_form {
 	border: 0;
 }
 
+form[action='process_bug.cgi'] input[type='submit'] {
+	margin-bottom: 0.125rem;
+}
 
 /* overrides for tablets & desktops */
 @media only screen and (min-width: 768px) { }
