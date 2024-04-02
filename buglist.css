@@ -25,14 +25,11 @@ table.bz_buglist {
 }
 
 .bz_id_column a, .bz_short_desc_column a, .bz_short_short_desc_column a {
-	color: #333;
-	font-weight: bold;
+	color: #039;
 }
 
-.bz_id_column a:hover, .bz_short_desc_column a:hover,
-.bz_short_short_desc_column a:hover, .bz_id_column a:focus,
-.bz_short_desc_column a:focus, .bz_short_short_desc_column a:focus {
-	color: #333;
+.bz_id_column a:visited, .bz_short_desc_column a:visited, .bz_short_short_desc_column a:visited {
+	color: #99007f;
 }
 
 .bz_result_count::after {

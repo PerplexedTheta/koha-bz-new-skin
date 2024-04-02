@@ -23,8 +23,13 @@ a, a:visited {
 	text-decoration: none;
 }
 
-a:hover, a:focus {
+a:hover {
 	text-decoration: 2px underline;
+}
+
+a:focus, a:active {
+	text-decoration: none;
+	outline: 2px solid #039;
 }
 
 input[type='button'], input[type='submit'],
@@ -46,8 +51,18 @@ input[type='reset'], button, .btn {
 }
 
 input, button, select, textarea {
-	font-size: inherit;
+	font-size: 1em;
 	padding: .5rem 1rem;
+	border: 1px solid #636363;
+}
+
+input:hover, button:hover, select:hover, textarea:hover {
+	border: 1px solid #333;
+}
+
+input:focus, button:focus, select:focus, textarea:focus {
+	border: 1px solid #333;
+	outline: 2px solid #039;
 }
 
 input, button, select {
@@ -55,11 +70,17 @@ input, button, select {
 }
 
 input[type='button']:hover, input[type='submit']:hover,
-input[type='reset']:hover, button:hover,
+input[type='reset']:hover, button:hover {
+	background: #ffd15e none;
+	border: 1px solid #ffc32b;
+	outline: none;
+}
+
 input[type='button']:focus, input[type='submit']:focus,
 input[type='reset']:focus, button:focus {
 	background: #ffd15e none;
 	border: 1px solid #ffc32b;
+	outline: 2px solid #039;
 }
 
 hr {
@@ -99,10 +120,15 @@ hr {
 	text-decoration: none;
 }
 
-#header a:hover, #header a:focus,
-#header a:active {
+#header a:hover {
 	color: #ccc;
-	text-decoration: underline 2px;
+	text-decoration: 2px underline;
+}
+
+#header a:focus, #header a:active {
+	color: #ccc;
+	text-decoration: none;
+	outline: 2px solid #ccc;
 }
 
 #banner {
@@ -193,9 +219,19 @@ hr {
 	font-size: 1em;
 }
 
+#header form input[type='text']:focus,
+#header form input[type='email']:focus,
+#header form input[type='password']:focus {
+	outline: 2px solid #ffc32b;
+}
+
 #header form input[type='submit'],
 #footer form input[type='submit'] {
 	margin-right: .25rem;
+}
+
+#header form input[type='submit']:focus {
+	outline: 2px solid #ffc32b;
 }
 
 #forgot_form_top > label,
@@ -474,9 +510,13 @@ a[href='index.cgi?logout=1']::after {
 		color: #ccc;
 	}
 
-	#header a:hover, #header a:focus,
-	#header a:active {
+	#header a:hover {
 		color: #fff;
+	}
+
+	#header a:focus, #header a:active {
+		color: #fff;
+		outline: 2px solid #fff;
 	}
 
 	#common_links {
