@@ -24,14 +24,6 @@ table.bz_buglist {
 	background: #f3f4f4;
 }
 
-.bz_id_column a, .bz_short_desc_column a, .bz_short_short_desc_column a {
-	color: #039;
-}
-
-.bz_id_column a:visited, .bz_short_desc_column a:visited, .bz_short_short_desc_column a:visited {
-	color: #99007f;
-}
-
 .bz_result_count::after {
 	display: block;
 	margin: .5rem 0;
