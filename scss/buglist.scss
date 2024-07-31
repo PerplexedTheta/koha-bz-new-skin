@@ -1,0 +1,58 @@
+/* buglist.css, PTFS Europe & Koha Community, Jake Deery, 2023 */
+
+/* overrides for bz elems */
+table.bz_buglist {
+	margin: .5rem 0;
+}
+
+.bz_buglist_header::after {
+	display: block;
+	margin: .5rem 0;
+	content: '\a';
+	border-top: 1px dotted #333;
+}
+
+.bz_enhancement {
+	background: inherit;
+}
+
+.bz_row_odd {
+	background: #fff;
+}
+
+.bz_row_even {
+	background: #f3f4f4;
+}
+
+.bz_result_count::after {
+	display: block;
+	margin: .5rem 0;
+	content: '\a';
+	border-top: 1px dotted #333;
+}
+
+.buglist_menu {
+	display: flex!important;
+	align-items: center;
+	justify-content: left;
+}
+
+div.bz_query_buttons {
+	max-width: none;
+}
+
+.buglist_menu div {
+	margin: 0 .125rem;
+	display: inline-block;
+	align-self: flex-end;
+}
+
+.bz_query_buttons #xml {
+	max-height: 24px;
+	vertical-align: bottom;
+}
+
+.bz_query_buttons #xml:hover, .bz_query_buttons #xml:focus {
+	background: none;
+	border: none;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "koha-bz-new-skin",
+  "version": "0.0.1",
+  "description": "A new skin for Koha's Bugzilla",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Koha-community/koha-bz-new-skin.git"
+  },
+  "author": "Jake Deery, et. al.",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://gitlab.com/Koha-community/koha-bz-new-skin/issues"
+  },
+  "homepage": "https://gitlab.com/Koha-community/koha-bz-new-skin#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.8"
+  }
+}
